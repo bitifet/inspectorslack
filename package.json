@@ -1,0 +1,25 @@
+{
+  "name": "inspectorslack",
+  "version": "0.0.1",
+  "description": "Dumb tool to iterate over large JSON object collection and tell about its most interesting characteristics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitifet/inspectorslack.git"
+  },
+  "keywords": [
+    "inspector",
+    "json",
+    "xml",
+    "analyze"
+  ],
+  "author": "Joan Miquel Torres <jmtorres@112ib.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bitifet/inspectorslack/issues"
+  },
+  "homepage": "https://github.com/bitifet/inspectorslack#readme"
+}
