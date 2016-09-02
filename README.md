@@ -3,6 +3,7 @@ inspectorSLACK
 
 > Dumb tool to iterate over large JSON object collection and tell about its most interesting characteristics.
 
+
 Syntax
 ------
 
@@ -30,6 +31,9 @@ Array of strings with some useful information about its contents:
 
 Usage example:
 --------------
+
+> Install from npm: `npm install inspectorslack`
+
 
     var inspect = require("inspectorslack");
 
@@ -106,6 +110,21 @@ Usage example:
         "topping.type", // Make all distinct values to be displayed.
         /// ...
     ]).join("\n"));
+
+
+### Output:
+
+    id: number - 3 (100%) VALUES: [0001, 0002, 0003]
+    type: string - 3 (100%) VALUES: [donut]
+    name: string - 3 (100%) VALUES: [Cake, Raised, Old Fashioned]
+    ppu: number - 3 (100%) VALUES: [0.55]
+    batters: OBJECT - 3 (100%)
+      batters.batter: ARRAY, OBJECT - 7 (233.33%)
+        batters.batter.id: number - 7 (100%) VALUES: [1001, 1002, 1003, 1004]
+        batters.batter.type: string - 7 (100%) VALUES: [Regular, Chocolate, Blueberry, Devil's Food]
+    topping: ARRAY - 16 (533.33%)
+      topping.id: number - 16 (100%)
+      topping.type: string - 16 (100%) DATA: [None, Glazed, Sugar, Powdered Sugar, Chocolate with Sprinkles, Chocolate, Maple, Glazed+, Sugar+, Chocolate+, Maple+]
 
 
 
