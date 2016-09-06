@@ -1,6 +1,6 @@
 {
   "name": "inspectorslack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dumb tool to iterate over large JSON object collection and tell about its most interesting characteristics",
   "main": "index.js",
   "scripts": {
